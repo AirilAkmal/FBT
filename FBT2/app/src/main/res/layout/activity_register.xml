@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/register_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back"
+                android:tint="#FFD700"
+                android:padding="8dp"
+                android:background="@drawable/circle_dark_bg"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="REGISTER"
+                android:textColor="#FFD700"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- College Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INTERNATIONAL ISLAMIC COLLEGE"
+            android:textSize="16sp"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KOLAJ ISLAM ANTARASANGSA"
+            android:textSize="14sp"
+            android:textColor="#BDBDBD"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFD700"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- ROLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Role"
+            android:textColor="#FFD700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/roleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- FULL NAME -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Full Name"
+            android:textColor="#FFD700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/fullNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter Full Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ID -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter ID Number"
+            android:textColor="#FFD700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/idNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter ID Number"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- EMAIL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Email"
+            android:textColor="#FFD700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- PHONE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Phone Number"
+            android:textColor="#FFD700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- PASSWORD -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Password"
+            android:textColor="#FFD700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="#2C2C2C"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#90A4AE"
+                android:padding="12dp"
+                android:hint="Enter Password"
+                android:background="@null"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:id="@+id/togglePassword"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_eye"
+                android:tint="#FFD700"
+                android:padding="14dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="REGISTER"
+            android:textSize="18sp"
+            android:textColor="#1A1A1A"
+            android:textStyle="bold"
+            android:background="#FFD700"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

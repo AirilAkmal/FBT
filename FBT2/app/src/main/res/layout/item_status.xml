@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/request_item_bg"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROJECTOR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By: John Doe"
+        android:textColor="#BDBDBD"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/itemDates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.D: 28/7/26   R.D: 3/8/26"
+        android:textColor="#BDBDBD"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Only Return button — Remind removed -->
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="RETURNED"
+        android:textColor="#FFFFFF"
+        android:background="#1976D2"/>
+</LinearLayout>

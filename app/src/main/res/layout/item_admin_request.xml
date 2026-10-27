@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/request_item_bg"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROJECTOR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By: John Doe"
+        android:textColor="#BDBDBD"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/itemPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose: Presentation"
+        android:textColor="#BDBDBD"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/itemDates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.D: 28/7/26   R.D: 3/8/26"
+        android:textColor="#BDBDBD"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/itemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PENDING"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/approveButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="APPROVE"
+            android:textColor="#FFFFFF"
+            android:background="#2E7D32"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/rejectButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="REJECT"
+            android:textColor="#FFFFFF"
+            android:background="#C62828"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

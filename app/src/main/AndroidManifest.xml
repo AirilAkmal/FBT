@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fbt2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:targetApi="31">
+
+        <!-- LAUNCHER ACTIVITY -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- AUTH ACTIVITIES -->
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- USERS ACTIVITIES -->
+        <activity android:name=".UsersMainActivity" />
+        <activity android:name=".UsersProfileActivity" />
+        <activity android:name=".UsersCreateRequestActivity" />
+        <activity android:name=".UsersMyRequestActivity" />
+        <activity android:name=".UsersHistoryActivity" />
+        <activity android:name=".UsersNotificationActivity" />
+
+        <!-- ADMIN ACTIVITIES -->
+        <activity android:name=".AdminMainActivity" />
+        <activity android:name=".AdminProfileActivity" />
+        <activity android:name=".AdminAnyRequestActivity" />
+        <activity android:name=".AdminHistoryActivity" />
+        <activity android:name=".AdminNotificationActivity" />
+        <activity android:name=".AdminItemsManagementActivity" />
+        <activity android:name=".AdminStatusActivity" />
+
+        <!-- LECTURER ACTIVITIES -->
+        <activity android:name=".LecturerDashboardActivity" />
+        <activity android:name=".LecturerStatusActivity" />
+        <activity android:name=".LecturerHistoryActivity" />
+        <activity android:name=".LecturerNotificationActivity" />
+        <activity android:name=".LecturerMyRequestActivity" />
+
+
+    </application>
+
+</manifest>

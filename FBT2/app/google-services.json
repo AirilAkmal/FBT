@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "168947468386",
+    "firebase_url": "https://fbt-booking-iic-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fbt-booking-iic",
+    "storage_bucket": "fbt-booking-iic.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168947468386:android:86160db18278e80e07693b",
+        "android_client_info": {
+          "package_name": "com.example.fbt2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqq2KdVmXx4hCSU03s9goLcOZIshw8QN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

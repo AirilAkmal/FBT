@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#1A1A1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_back"
+                android:background="@drawable/circle_dark_bg"
+                android:padding="5dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PROFILE"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- NAME -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME:"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter Name"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ID NUMBER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID NUMBER:"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/idNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter ID"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- PHONE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NO:"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter Phone"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- EMAIL (read-only) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL:"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            android:padding="12dp"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:enabled="false"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="SAVE PROFILE"
+            android:textSize="16sp"
+            android:textColor="#1A1A1A"
+            android:background="#FFD700"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- DIVIDER -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFD700"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- CHANGE PASSWORD SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE PASSWORD"
+            android:textColor="#FFD700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- NEW PASSWORD with Eye Toggle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Password:"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="#2C2C2C"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/newPasswordInput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#90A4AE"
+                android:padding="12dp"
+                android:hint="Enter New Password"
+                android:background="@null"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:id="@+id/toggleNewPassword"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_eye"
+                android:tint="#FFD700"
+                android:padding="14dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <!-- CONFIRM PASSWORD with Eye Toggle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password:"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="#2C2C2C"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/confirmPasswordInput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#90A4AE"
+                android:padding="12dp"
+                android:hint="Confirm Password"
+                android:background="@null"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:id="@+id/toggleConfirmPassword"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_eye"
+                android:tint="#FFD700"
+                android:padding="14dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <!-- CHANGE PASSWORD BUTTON -->
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="CHANGE PASSWORD"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#1976D2"/>
+
+    </LinearLayout>
+</ScrollView>
